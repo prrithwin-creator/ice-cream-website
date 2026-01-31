@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Paradise</title> <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body> <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo"> <img src="img/81.jpg" alt="Logo"> </div>
+        <nav class="menu" id="menu"> <a href="#home">Home</a> <a href="#product">Products</a> <a
+                href="#services">Services</a> <a href="#about">About Us</a> <a href="#testimonial">Testimonials</a> <a
+                href="#contact">Contact</a> </nav>
+        <div class="shopping">
+            <div class="search"> <input type="text" placeholder="Search"> <i class="fa-solid fa-magnifying-glass"></i>
+            </div> <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-cart-shopping"></i> <i
+                class="fa-solid fa-user"></i>
+        </div> <i class="fa-solid fa-bars" id="bars"></i>
+    </header> <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero_text" data-aos="fade-right">
+            <h1>Welcome to <br><span>Ice Cream <br>Paradise</span></h1>
+            <p>Delicious, 100% natural ice creams crafted with love. Taste the happiness in every scoop!</p> <button
+                class="btn"><a href="order.html">Order Now</a></button>
+            <div class="social_media"> <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-twitter"></i> <i
+                    class="fa-brands fa-pinterest"></i> <i class="fa-solid fa-phone"></i> </div>
+        </div>
+        <div class="hero_img" data-aos="fade-left"> <img src="img/65.png" alt="Ice Cream"> </div>
+    </section> 
+    
+    
+    <!-- Products Section -->
+    <section class="our_product wrapper" id="product">
+        <div class="heading">
+            <h3>100% Natural</h3>
+            <h1>Our Products</h1>
+        </div>
+        <div class="product_menu"> <button class="active" data-filter="all">ALL</button> <button
+                data-filter=".strawberry">STRAWBERRY</button> <button data-filter=".chocolate">CHOCOLATE</button>
+            <button data-filter=".vanilla">VANILLA</button><button data-filter=".butterscotch">BUTTERSCOTCH</button> </div>
+        <div class="container">
+            <div class="mix strawberry"><img src="img/24.png" alt="Strawberry Ice Cream"></div>
+            <div class="mix chocolate"><img src="img/22.png" alt="Chocolate Ice Cream"></div>
+            <div class="mix vanilla"><img src="img/20.png" alt="Vanilla Ice Cream"></div>
+            <div class="mix chocolate"><img src="img/23.png" alt="Chocolate Ice Cream"></div>
+            <div class="mix chocolate"><img src="img/30.png" alt="Chocolate Ice Cream"></div>
+            <div class="mix vanilla"><img src="img/36.png" alt="Vanilla Ice Cream"></div>
+            <div class="mix butterscotch"><img src="img/28.png" alt="Butterscotch Ice Cream"></div>
+            <div class="mix strawberry"><img src="img/33.png" alt="Strawberry Ice Cream"></div>
+            <div class="mix butterscotch"><img src="img/26.png" alt="Butterscotch Ice Cream"></div>
+        </div>
+
+
+
+
+    </section> <!-- Services Section -->
+    <section class="services wrapper" id="services">
+        <div class="heading">
+            <h3>Why Choose Us</h3>
+            <h1>Our Services</h1>
+        </div>
+        <div class="services_cards">
+            <div class="card" data-aos="zoom-in"> <i class="fa-solid fa-ice-cream"></i>
+                <h3>Premium Ice Creams</h3>
+                <p>Freshly made ice creams with organic ingredients.</p>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="100"> <i class="fa-solid fa-shipping-fast"></i>
+                <h3>Fast Delivery</h3>
+                <p>Get your ice creams delivered at your doorstep quickly.</p>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="200"> <i class="fa-solid fa-hand-holding-heart"></i>
+                <h3>Customer Support</h3>
+                <p>We are here 24/7 to serve you and answer queries.</p>
+            </div>
+        </div>
+    </section> 
+    <!-- About Section -->
+    <section class="about wrapper" id="about">
+        <div class="about_img" data-aos="fade-right"> <img src="img/34.jpg" alt="About Us"> </div>
+        <div class="about_info" data-aos="fade-left">
+            <h3>About Us</h3>
+            <h1>Enjoy It Before Melting</h1>
+            <p>Our ice creams are crafted with passion using natural ingredients. Each scoop is designed to bring a
+                smile to your face.</p>
+            <div class="check_box">
+                <div class="row"><i class="fa-solid fa-square-check"></i> Organic Ingredients</div>
+                <div class="row"><i class="fa-solid fa-square-check"></i> Fresh & Tasty</div>
+                <div class="row"><i class="fa-solid fa-square-check"></i> Quality Assurance</div>
+                <div class="row"><i class="fa-solid fa-square-check"></i> Wide Variety</div>
+            </div> 
+            <button class="btn"><a href="learn.html"> Learn More</a></button>
+        </div>
+    </section> <!-- Testimonial Section -->
+    <section class="testimonial wrapper" id="testimonial">
+        <div class="heading">
+            <h3>Customer Love</h3>
+            <h1>Testimonials</h1>
+        </div>
+        <div class="testimonial_cards">
+            <div class="card" data-aos="fade-up">
+                <p>"The best ice cream in town! Creamy, delicious, and fresh."</p>
+                <h4>— Sarah J.</h4>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <p>"Fast delivery and amazing taste. My kids loved it!"</p>
+                <h4>— John D.</h4>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <p>"Variety of flavors and very friendly staff. Highly recommended!"</p>
+                <h4>— Emily R.</h4>
+            </div>
+        </div>
+    </section> 
+    
+<!-- Left Side: Image -->
+<section class="contact-section">
+    <div class="contact-container">
+
+        <!-- Left Side: Image -->
+        <div class="contact-left">
+            <img src="img/66.png" alt="Contact Image">
+        </div>
+
+        <!-- Right Side: Form -->
+        <div class="contact-right">
+            <div class="contact-heading">
+                <h3>Get In Touch</h3>
+                <h1>Contact With Us</h1>
+            </div>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder=" ">
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder=" ">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required placeholder=" "></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2026 Ice Cream Paradise. All Rights Reserved.</p>
+    </div>
+</footer>
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript.js"></script>
+    <script> AOS.init(); var mixer = mixitup('.container'); </script>
+</body>
+
+</html>

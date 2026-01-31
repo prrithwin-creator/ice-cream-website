@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ice Cream Paradise - Learn More</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #fff5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar .logo img {
+      height: 50px;
+    }
+
+    .navbar .menu a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar .menu a:hover {
+      color: #ff6b81;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+      background: linear-gradient(135deg, #ffe6e6, #ffd6d6);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #ff6b81;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* About Section */
+    .about-section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .about-section img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-content {
+      flex: 1;
+    }
+
+    .about-content h2 {
+      font-size: 36px;
+      color: #ff6b81;
+      margin-bottom: 20px;
+    }
+
+    .about-content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .about-content ul {
+      list-style: none;
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .about-content ul li {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .about-content ul li i {
+      color: #ff6b81;
+      font-size: 18px;
+    }
+
+    /* Call to Action Button */
+    .about-content .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: #ff6b81;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .about-content .btn:hover {
+      background: #ff4757;
+    }
+
+    /* Footer */
+    .footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 50px;
+    }
+
+    .footer .social-icons a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .footer .social-icons a:hover {
+      color: #ff6b81;
+    }
+
+    /* Responsive */
+    @media(max-width: 900px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo"> <img src="img/81.jpg" alt="Logo"> </div>
+    <nav class="menu">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#product">Products</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#about">About Us</a>
+      <a href="index.html#testimonial">Testimonials</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" data-aos="fade-down">
+    <h1>Discover the Secrets of Our Ice Cream</h1>
+    <p>Learn about our premium ingredients, traditional recipes, and passion for making every scoop perfect!</p>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" data-aos="fade-up">
+    <img src="img/34.jpg" alt="About Ice Cream">
+    <div class="about-content">
+      <h2>Crafted With Love & Passion</h2>
+      <p>At Ice Cream Paradise, every scoop is a masterpiece. We use only natural ingredients and traditional recipes to
+        create creamy and delicious ice creams.</p>
+      <ul>
+        <li><i class="fa-solid fa-square-check"></i> Organic Ingredients</li>
+        <li><i class="fa-solid fa-square-check"></i> Fresh & Tasty</li>
+        <li><i class="fa-solid fa-square-check"></i> Quality Assurance</li>
+        <li><i class="fa-solid fa-square-check"></i> Wide Variety of Flavors</li>
+        <li><i class="fa-solid fa-square-check"></i> Perfect for All Ages</li>
+        <li><i class="fa-solid fa-square-check"></i> Traditional Recipes</li>
+      </ul>
+      <a href="order.html" class="btn">Order Now 🍦</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2026 Ice Cream Paradise. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+</body>
+
+</html>
